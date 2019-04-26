@@ -1,0 +1,77 @@
+body {
+	background: whites;
+}
+
+#about ul {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	text-align: left;
+	list-style-type: none;
+	color: white;
+}
+
+#KU p {
+	text-align: justify;
+}
+
+#KU h3 {
+	text-align: center;
+}
+#GE {
+	background-image: linear-gradient(to bottom right, #777, #eee);
+}
+
+#GE img {
+	padding-top: 50px ;
+}
+#GE p, h2, ul, h3{
+	color: black;
+	text-align: justify;
+}
+
+.aboutRow {
+	float: left;
+}
+
+#profilePic {
+	align-self: left;
+	width: 65%;
+	height: 65%;
+	margin: 10px;
+}
+
+#maps {
+	background: #aaa;
+	width: 98%;
+	height: 98%;
+	border: 2px solid black;
+	justify-content: center;
+	position: relative;
+	left: 1%;
+	box-shadow: 1px 1px 20px black;
+	padding: 20px;	
+}
+
+.map-title h1{
+	color: black;
+	text-align: center;
+}
+
+.map-side-box {
+	position: relative;
+	left: 5%;
+	width: 90%;
+	top: 1%;
+	height: 95%;
+	justify-content: center;
+	border: 1px solid black;;
+	background: white;
+}
+
+.map-side-box label, h3, img {
+	padding: 2%;
+	line-height: 5px;
+}
+
+.invisible {
+	display: none;
+}

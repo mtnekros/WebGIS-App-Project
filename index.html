@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Diwas Tamang</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/added.css" rel="stylesheet">
+
+	<!-- openlayer map stuff -->
+    <link rel="stylesheet" href="https://openlayers.org/en/v5.3.0/css/ol.css" />
+    <link rel="stylesheet" href="css/ol3-layerswitcher.css" />
+    <style>
+      #mainMap {
+        background: green;
+        justify-content: center;
+        height: 650px;
+        width: 95%;
+        border: 1px solid black; 
+        margin: 5px;
+        float: left;
+        padding: 20px;
+        box-shadow: 1px 1px 20px black;
+      }
+    </style>
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">WebGIS Assignment</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#KU">Kathmandu University</a>
+    		</li>
+    		<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#GE">Geomatics</a>
+    		</li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#WebGIS">WebGIS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#maps">Maps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Wazzzzup!</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">I am Diwas Tamang. Browse through the page to find about different map services and my informations.</h2>
+          <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <div class="row col-sm-6 aboutRow">
+          <ul>
+            <br><br><br><br>
+            <h2 class="text-white mb-4">ABOUT ME</h2>
+            <li>Name: Diwas Tamang</li>
+            <li>Roll no.: 26</li>
+            <li>Group: Geomatics Engineering</li>
+            <li>Level: 4th Year/ 1st Semester</li>
+            <li>Email: mtnekros@gmail.com</li>
+          </ul>
+        </div>
+        <div class="row col-sm-6">
+          <img src="img/diwas-profile.jpg" id="profilePic" alt="">
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- Kathmandu University Section -->
+    <section id="KU" class="projects-section bg-light">
+      <div class="container">
+		<div class="row">
+			<div class="col-xl-8 col-lg-7 align-items-center">
+      			<h3>Kathmandu University</h3>
+			</div>
+      	</div>
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/ku.jpg" alt="">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>About Kathmandu University</h4>
+              <p class="text-black-50">Kathmandu University is an autonomous, not-for-profit, non - government institution dedicated to maintain high standards of academic excellence. It is committed to develop leaders in professional areas through quality education.
+			  </p>
+			  <p class="text-black-50">
+				It is located in a mountainous landscape in Dhulikhel Municipality about 30 kilometers east of Kathmandu (KTM) having round-the-year pleasant climate and panoramic Himalayan Views.
+				KU had a very modest start from a rented building at Tangal, Kathmandu. Now, it has been able to create a built up space of 46,846 square meters.
+			  </p>
+			  
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- About Department -->
+    <section id="GE" >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Geomatics Department</h2>
+            <p>
+              Geomatics is a systemic, multidisciplinary, integrated approach to selecting the Instruments and the appropriate techniques for collecting,   storing, integrating, modelling, analysing, retrieving at will, transforming, displaying and distributing spatially geo referenced data from different sources with well-defined accuracy characteristics, continuity and in a digital format . Based on the scientific framework of geodesy, it uses terrestrial, marine, airborne, and satellite-based sensors to acquire spatial and other data.
+            </p>
+            <p>
+              Prior to mid 90′s, this program was known as “Surveying Technology”. “Geomatics” is a term that is currently used by educational institutions, governments and private industry. “Geomatics Engineering is the field of activity that integrates the acquisition, processing, analysis, display and management of spatial information. It is an exciting and new grouping of subj ects in the spatial and environmental information sciences with a broad range of employment opportunities as well as offering challenging pure and applied research problems in a vast range of interdisciplinary fields” [ Geomatics Engineering , From Wikipedia, the free encyclopedia]. It goes beyond commonly known or traditional areas of surveying and mapping, and includes a much wider range of activities and the use of rapidly changing technologies that relate to collecting and managing information.
+            </p>
+            <h3>Career Oppertunities</h3>
+            <ul>
+              <li>Government Ministries and Departments</li>
+              <li>Nepal Army/ Nepal Police</li>
+              <li>Nepal Electricity Authority</li>
+              <li>Private sector infrastructure development activities</li>
+              <li>NGO/INGO</li>
+              <li>International job market (Universities, private and public companies)</li>
+              <li>Academia and research institutes</li>
+            </ul>
+            <a class="btn btn-primary btn-xs" href="http://ku.edu.np/dcge/?page_id=72" role="button">Click For More</a>
+          </div>
+          <div class="col-sm-6">
+            <img src="img/geomatics1.jpg" class="img-fluid">
+            <img src="img/geomatics.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section id="WebGIS" class="projects-section bg-light">
+      <div class="container">
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/webGIS.jpg" alt="">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>WebGIS</h4>
+			  <p class="text-black-50">
+				Web GIS is a type of distributed information system, comprising at least a server and a client, where the server is a GIS server and the client is a web browser, desktop application, or mobile application. In its simplest form, web GIS can be defined as any GIS that uses web technology to communicate between a server and a client.
+			  </p>
+			  
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Map Service Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Web Map Service</h4>
+                  <p class="mb-0 text-white-50">Displays an image (gif, jpeg, png) of vector or raster data.These images are typically produced by a map server from data provided by a GIS database.WMS specifies a number of different request types.WMS is a widely supported format for maps and GIS data accessed via the Internet and loaded into client side GIS software.</p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/wms.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- Web Feature Servcie Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/wfs.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Web Feature Service</h4>
+                  <p class="mb-0 text-white-50">Provides access to vector data (output in Geography Markup Language (GML)).can think of geographical features as the "source code" behind a map, whereas the WMS interface or online tiled mapping portals like Google Maps return only an image, which end-users cannot edit or spatially analyze</p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Web Coverage Service Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/wcs.png" alt="">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Web Coverage Service</h4>
+                  <p class="mb-0 text-white-50">A WCS provides access to coverage data in forms that are useful for client-side rendering, as input into scientific models, and for other clients. The WCS may be compared to the OGC Web Feature Service (WFS) and the Web Map Service.The WCS Core establishes basic spatial and temporal extraction</p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- maps section -->
+    <section id="maps">
+    	<div class="row">
+	        <div class="col-sm-12" >
+	            <div class="map-title">
+	                <h1>Maps of Nepal</h1>
+				</div>
+	        </div>
+	    </div>
+    	<div class="row no-gutters">
+			<div class="col-sm-3">
+				<div class="map-side-box">
+					<br>
+					<h3>Base Maps</h3>
+						<label><input type="checkbox"  id="bingBaseLayer" unchecked>Bing Map(default OSM)</label><br>
+					<h3>Layers</h3>
+					    <label><input type="checkbox"  class="layerCheckBox" data-legend="totalPopLayerLegend" checked>Total Population</label><br>
+					    <label><input type="checkbox" class="layerCheckBox" data-legend="malePopulationLayerLegend" unchecked>Male Population</label><br>
+						<label><input type="checkbox" class="layerCheckBox" data-legend="femalePopulationLayerLegend" unchecked>Female Pop</label><br>
+						<label><input type="checkbox" class="layerCheckBox" data-legend="administrativeLayerLegend" unchecked>Administrative</label><br>
+					    <label><input type="checkbox" class="layerCheckBox" data-legend="landCoverLayerLegend" unchecked>Land Cover</label><br>
+	                <h3>Legend</h3>
+	                <img id="totalPopLayerLegend" class = "widerImg" src="http://localhost:8080/geoserver/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&STRICT=false&style=Nepal:PopData" alt="PopLegend">
+	                <img id="malePopulationLayerLegend" src="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?94-IResourceListener-styleForm-context-panel-legendContainer-legendImg&name=malePop&workspace=Nepal&antiCache=1548862118328" alt="MalePopLegend">
+	                <img id="femalePopulationLayerLegend"  src="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?96-IResourceListener-styleForm-context-panel-legendContainer-legendImg&name=femalePop&workspace=Nepal&antiCache=1548862147107" alt="FemalePopLengend">
+	                <img id="administrativeLayerLegend"  src="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?95-IResourceListener-styleForm-context-panel-legendContainer-legendImg&name=municipalities&workspace=Nepal&antiCache=1548862151591" alt="adminLegend">
+	                <img id="landCoverLayerLegend"  src="http://localhost:8080/geoserver/web/wicket/bookmarkable/org.geoserver.wms.web.data.StyleEditPage?91-IResourceListener-styleForm-context-panel-legendContainer-legendImg&name=LandCover&workspace=Nepal&antiCache=1548862043457" alt="landCoverLegend">
+	            </div>
+			</div>
+    		<div class="col-sm-9">
+    			<div id="mainMap" class="mainMap">
+    				<!-- map goes here -->
+	            </div>
+	            <!-- Map JS code -->
+              <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+				      <script type="text/javascript" src="js/webGISMaps.js"></script>
+	            
+    		</div>
+    	</div>
+    </section>
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+            <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+            <form class="form-inline d-flex">
+              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section bg-black">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Address</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-envelope text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Email</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="#">mtnekros@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Phone</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">+1 (555) 902-8832</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social d-flex justify-content-center">
+          <a href="#" class="mx-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="mx-2">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="mx-2">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+    	<div id="googleMap" style="height:400px;width:90%;position:relative;left:5%;"></div>
+    	<br>
+    	<br>
+      <div class="container">
+        Copyright &copy; Your Website 2018
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+	<script>
+	function myMap() {
+	var myCenter = new google.maps.LatLng(27.721426, 85.361992);
+	var mapProp = {center:myCenter, zoom:18, scrollwheel:true, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+	var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	var marker = new google.maps.Marker({position:myCenter});
+	marker.setMap(map);
+	}
+	</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2a8QtzSaEPLeybBaPZpudLLxZq56hcCo&callback=myMap"></script>
+
+  </body>
+
+</html>
